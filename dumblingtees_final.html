@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
+    }
+    .container{
+        display: flex;
+        border: 2px solid whitesmoke;
+        background: black;
+    }
+    .logo{
+        width: 50%;
+    }
+    .menubar{
+        width: 100%;
+        float: right;
+        display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         gap: 2rem;
+    }
+    .menubar ul{
+        text-decoration: none;
+        width: 100%;
+        color: white;
+        background: black;
+        display: flex;
+        list-style: none;
+    }
+    .menubar ul li{
+        padding: 15px;
+        font-size: 13px;
+        }
+     .menubar ul li a{
+        text-decoration: none;
+        padding: 10px 20px;
+    }   
+    .menubar ul li a:hover{
+        color: white;
+        background-color: red;
+    }
+    .dropdown{
+        display: none;
+    }
+    .menubar ul li:hover .dropdown{
+        display: block;
+        position: absolute;
+        margin-top: 10px;
+    }
+    .menubar ul li:hover .dropdown ul{
+        display: block;
+    }
+</style>
+<body>
+    <div class="contianer">
+    <div class="logo"> 
+    </div>
+        <ul class="menubar">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a>
+            <div class="dropdown">
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Unisex</a></li>
+            </ul>
+           </div>
+            </li>
+            <li><a href="#">Account</a>
+                <div class="dropdown">
+            <ul>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Coins</a></li>
+            </ul>
+        </div>
+        </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </ul>
+    </div>
+</body>
+</html>

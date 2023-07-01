@@ -1,0 +1,36 @@
+*{
+    background-color: #FFECB3;
+}
+.box{
+    border: solid black;
+    width: 1085px;
+    height: 512px;
+    margin: 83px;
+    margin-left: 219px;
+}
+img{
+    padding-top: 14px;
+    width: 386px;
+    height: 365px;
+    margin: 1px;
+    margin-left: -2px;
+}
+.style header{
+    font-size: 96px;
+    text-align: center;
+    font-style: italic;
+}
+.A1 {
+    font-size:23px;
+    float:  right;
+    padding: 49px;
+    text-decoration: none;
+    color:rgb(211, 22, 22);
+}
+.B1{
+    font-size:23px;
+    float: left;
+    padding: 66px;
+    text-decoration: none;
+    color: rgb(211, 22, 22);
+}

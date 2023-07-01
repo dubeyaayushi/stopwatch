@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
+    }
+    .container{
+        width: 100%;
+        height: 17px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background-color: black;
+        color: white;
+    }
+    .logo{
+        padding: 0px 0px;
+        margin: 0px -125px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    ul li:hover{
+        color: darkred;
+    }
+     li{
+        display: inline-block;
+        text-decoration: none;
+        list-style: none;
+        padding: 0px 30px;
+        font-size: 24px;
+        margin:  0px 15px;
+        color: white;
+
+     }
+     button{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        color:black;
+        cursor: pointer;
+        background-color:white;
+        border-radius: 5px;
+        width: 80px;
+        margin: -15px -141px;
+        padding: -3px 0px;
+     }
+     img{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        }
+       
+        .section::before{
+           background: url('https://as1.ftcdn.net/v2/jpg/02/90/47/92/1000_F_290479268_hWsMls2kq1omx1KQHZpz40guNuKcD3tl.jpg') no-repeat center center/cover;
+           content: ""; 
+           position: absolute;
+            top: 50;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            list-style: none;
+        }
+        section {
+            height: 344px;
+            font-family: 'Bree Serif', serif;
+            margin: 300px 230px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            text-decoration: none;
+           color: black;
+        }
+        .dis{
+            position: absolute;
+             top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              font-size: 4rem;
+              color:black;
+             list-style: none;
+             text-decoration: none;
+        }
+        ul li ul.shop li{
+            display: block;
+        }
+        ul li ul.shop{
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+     .shop{
+        display: none;
+    }
+    .shop ul li{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color:white;
+        background: black;
+        padding: 2px 2px;
+    }
+    .container ul li:hover .shop{
+        display:block;
+        position: absolute;
+        margin-top: 10px;
+    }
+    .container ul li:hover .shop ul{
+        display:block;
+    } 
+    /*
+    .menubar {
+        display: flex;
+        list-style: center;
+    }
+    .menubar ul{
+        display: flex;
+        list-style: none;
+    }
+    .menubar ul li{
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+    .menubar ul li a{
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    .menubar ul li a:hover{
+        color: white;
+        background-color: black;
+    }
+    .shop{
+        display: none;
+    }
+    .menubar ul li:hover .shop{
+        display: block;
+        position:absolute;
+        background-color: black;
+        margin-top: 10px;
+}
+.menubar ul li:hover .shop ul{
+    display: block;
+}menubar*/
+</style>
+<body>
+    <div class="container">
+        <p class="logo">Dumbling Tees</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a>
+                <div  class="shop">
+                    <ul>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Unisex</a></li>
+                    </ul>
+                </div>
+        </li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <button>Sign up</button>
+        <button>Login</button>
+    </div>
+    <div class="section">
+        <div class="dis"><a href="#">GET FLAT 50% OFF ON FIRST PURCHASE!!!</a>
+        </div>
+    </div>
+</body>
+</html>

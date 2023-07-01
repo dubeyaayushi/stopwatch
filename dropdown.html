@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container a{
+       padding: 10px 10px;
+        font-size: 23px;
+        font-weight: 100;
+        color: white;
+        background-color: black;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .container a:hover{
+        background-color: grey;
+    }
+    .container ul{
+         list-style: none;
+         display: flex;
+    }
+    .container li{
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .container li:hover .submenu > li{
+        display: block;
+        top: 0px;
+    }
+    .submenu li{
+        display: none;
+        position: absolute;
+        top: 0px;
+    }
+    .submenu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+    }
+    .submenu li{
+        position: relative;
+    }
+</style>
+<body>
+        <nav class="container">
+            <ul>
+                <li><a href="#">Home    </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Settings</a>
+                <ul class="submenu">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Coins</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <script> //function sum(a,b){
+                 //return a+b z }
+             //function hotel_cal(price, tip){
+             //   tip_percentage = tip / 100
+             //   tip_amount = price * tip_percentage
+             //   total = sum(price,tip_amount) 
+             //   return total
+             //}
+             //console.log(hotel_cal(100,30))
+             //const aarow = (a,b) => a+b
+             //console.log(aarow(100,78))
+             //function add(a,b){
+             //   return a+b
+             //}
+             // console.log (add(12,4))
+             //const arrowadd = (a,b) => a+b
+             //console.log(arrowadd(1,12))
+            // function sub(a,b){
+            //    return a-b 
+            // }
+            // console.log(sub(0,9))
+           // const arrowsub = (a,b) => a-b
+           //// console.log(arrowsub(0,9))
+           //function multi(a,b){
+           // return a*b
+           //}
+           //console.log(multi(0,9))
+           //const arrow = (a,b) => a*b
+           //console.log(arrow(9,97755452))
+           //const div = (a,b) => a/b
+           //console.log(div(0,9))
+           //function div(a,b){
+           // return a/b
+           //}
+           //console.log(div(99,111))
+           //const things = ['apple','mango','litchi']
+           // things.push('banna') 
+           //console.log(things.slice(0,2))
+           //const person = {
+           // name: 'dexter' ,
+           // shirt: 'black' ,
+           // phone_number: '8090892737'
+           //}
+           //console.log(person.name)
+           //console.log(person.shirt)
+           //console.log(person.phone_number)
+           //console.log(person['name'])
+          // const introduce = (name,shirt) => {
+          //  const person = {
+          //      name: name,
+          //      shirt: shirt 
+          //  }
+          //  const intro = `Hi, my name is ${person.name} and the color of my shirt is ${person.shirt}`
+          //  return intro 
+          // }
+          // console.log(introduce('Aayushi' , 'black_blue'))
+          // const things = (a,b) => {
+          //  const display ={
+          //      name: a,
+          //      fruit: b
+          //  }
+          //   const final = `Hii...i am ${display.name} and my favrouite fruit is ${display.fruit}`
+          //   return final 
+          // }
+          // console.log(things('Kityy', 'mango'))
+         // const howmanyletterrs = () => {
+         //   const phrase = "lorem got a black sheep i got a purple we both got sheep that makes us the sheep master"
+         //   for(letter in phrase){
+         //       console.log(letter)
+         //   }
+         // }
+         // howmanyletterrs()
+         // const but = () =>
+         // {
+         //   const para = 'here i am learning javascript and been sad and anxious at the same time'
+         //   for(letter in para)
+         //   console.log(letter)
+         // }
+         // but()
+        // const phrase = 'fjarefrngnjnjdniifjurnksoeifjnf jdngfijri  soiejfn,nn j jnjsnjjfn sndjjfnkllwnf'
+        //   let length = phrase.length
+        //   console.log(length)
+        //let result = 0;
+        //const sumarray = (numbers) => {
+        //    for (const number of numbers){
+        //        console.log(number)
+        //        result = result + number
+        //    }
+        //    return{ result }
+        //}
+            //  const nums = prompt('type your nums')
+        //const nums = [1,2,3,4]
+      //  console.log(sumarray(nums))
+       // const arraysum = (numbers) =>{
+       //     let result = 0
+       //     for( const number of numbers){
+       //     console.log(number)
+       //     result = result + number
+       // }
+       //     return { result }
+       //  }
+       // let num = [1,23,43,24,56]
+       // console.log(arraysum(num))
+        //    const phrase = (numbers) =>{
+        //        let result = 0
+        //        for( const number of numbers){
+        //        console.log(number)
+        //        result = result+number
+        //        }
+        //    return { result }
+        //}
+        //    const num = [1,2323,4343532,5434]     
+        //console.log(phrase(num))
+        //let length = num.lenght;
+        //const fruits = ['ijgijg','odsjisgj','fnjskgjs']
+        //console.log(num)
+           //  const maxnum = (numbers) => {
+           //     let result = numbers[0]
+           //     for( const number of numbers)
+           //     {
+           //         if(number > result) {
+           //             result = number
+           //         }
+           //     }
+           //     return { result }
+           //  }
+           //  console.log(maxnum([1,2,3,4,12,3,3,232,3123,24,123213,23,2,444,5,5555555,66666666666]))
+       // const min = (numbers) => {
+       //     let result = numbers[0]
+       //     for(const number of numbers){
+       //         if(number < result)
+       //         {
+       //             result = number
+       //         }
+       //     }
+       //     return { result }
+       // }
+       // console.log(min([1,2,3,33,4,22,44,45,0]))
+      //const avg = (numbers) =>{
+        //let result = 0 
+       // let count = 0
+       //for(number of numbers){
+       //    count = count + 1
+       //   }
+    //  let length =numbers.length
+    //  console.log(length)
+    //    for(number of numbers){
+    //        result = result + number
+    //       // result = result/count
+    //    }
+    //    return result/length 
+    //}
+    //  let num = [1,2,3]
+    //  console.log(avg(num))
+        //const freq = (numbers) =>{
+        //let count = numbers[0]
+        //for( const number of numbers)
+        //{
+        //    if(number==count)
+        //    count+1
+        //}
+        //return number
+        //}
+        //let num = [1,2,3,1]
+        //console.log(freq(num))
+       
+      </script>
+</body>
+</html>
